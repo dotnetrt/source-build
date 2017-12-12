@@ -6,9 +6,9 @@
     <BuildArguments Condition="$(Platform.Contains('arm'))">$(BuildArguments) -TargetArchitecture=$(Platform) -DisableCrossgen=true -CrossBuild=true</BuildArguments>
     <BuildCommand>$(ProjectDirectory)/build$(ShellExtension) $(BuildArguments) -- /p:BuildDebPackage=false</BuildCommand>
     <BuildCommand Condition="$(Platform.Contains('arm'))">$(ArmEnvironmentVariables) $(BuildCommand)</BuildCommand>
-    <LatestCommit>82b22fa44e46d624ebeddf156f33e9cfb317bd57</LatestCommit>
-    <VersionSeedDate>2017-07-20</VersionSeedDate>
-    <OfficialBuildId>20170720-05</OfficialBuildId>
+    <LatestCommit>8d7d3cef260561ab0d732e65eaf886d38f5219d1</LatestCommit>
+    <VersionSeedDate>2017-12-11</VersionSeedDate>
+    <OfficialBuildId>20171211-03</OfficialBuildId>
 
     <!-- Need to set $(PackagesOutput) so WriteVersions writes the versions file for cli, until cli respects auto-dependency flow -->
     <PackagesOutput>$(SourceBuiltPackagesPath)</PackagesOutput>
